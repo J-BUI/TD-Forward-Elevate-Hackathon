@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>TD Forward - The Dream Team</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/styles/main.css">
+    <script src=""></script>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <img src="public/images/logo.png" alt="logo">
+        </header>
+        <h3>Welcome & Thank you msg...</h3>
+        <section class="main">
+            <form id="signup" action="transaction" method="post" onchange="validation()" onsubmit="return validation()">
+                <div>
+                    <fieldset>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="forward_pref1">Age</label>
+                                <select class="opt custom-select custom-select-lg mb-3" name="forward_pref1" id="forward_pref1">
+                                    <optgroup>
+                                        <option value="a1" selected>All</option>>
+                                        <option value="a2">12 - 18</option>>
+                                        <option value="a3">19 - 24</option>>
+                                        <option value="a4">25 - 34</option>>
+                                        <option value="a5">35 - 44</option>>
+                                        <option value="a6">45 - 54</option>>
+                                        <option value="a7">55 - 64</option>>
+                                        <option value="a8">65+</option>>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="forward_pref2">Work</label>
+                                <select class="opt custom-select custom-select-lg mb-3" name="forward_pref2" id="forward_pref2">
+                                    <optgroup>
+                                        <option value="w1" selected>All</option>>
+                                        <option value="w2">Full-time employee</option>>
+                                        <option value="w3">Part-time employee</option>>
+                                        <option value="w4">N/A</option>>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="forward_pref3">Income</label>
+                                <select class="opt custom-select custom-select-lg mb-3" name="forward_pref3" id="forward_pref3">
+                                    <optgroup>
+                                        <option value="i1" selected>All</option>>
+                                        <option value="i2">$0 - $19,999</option>>
+                                        <option value="i3">$20,000 - $34,999</option>>
+                                        <option value="i4">$35,000 - $49,999</option>>
+                                        <option value="i5">$50,000 - $74,999</option>>
+                                        <option value="i6">$75,000 - $99,999</option>>
+                                        <option value="i7">$100,000+</option>>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="tag">Transaction Category</label>
+                                <select class="opt custom-select custom-select-lg mb-3" name="tag" id="tag">
+                                    <optgroup>
+                                        <option hidden="">Please choose one of the following category</option>
+                                        <option value="t1">Auto and Transport</option>
+                                        <option value="t2">Bills and Utilities</option>
+                                        <option value="t3">Entertainment</option>
+                                        <option value="t4">Food and Dining</option>
+                                        <option value="t5">Mortgage and Rent</option>
+                                        <option value="t6">Shopping</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                    </fieldset>
+                </div>
+    </div>
+    </fieldset>
+    <br />
+    <div>
+        <input type="reset" class="btn btn-secondary btn-lg" value="Clear">
+        <input type="submit" class="btn btn-primary btn-lg" value="Submit">
+        </form>
+        </section>
+
+        <footer class="footer-copyright text-center py-3">
+            &copy; 2018 The Dream Team
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>

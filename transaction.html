@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>TD Forward - The Dream Team</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/styles/main.css">
+    <!-- <script src=""></script> -->
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <img src="/public/images/logo.png" alt="logo">
+        </header>
+        <br>
+        <h3>Matched Transactions</h3>
+        <br>
+        <div id="trans_record"></div>
+        <script>
+            var trans_record = ["a", "b", "c"];
+            var dirList = document.querySelector("#trans_record");
+            var unorderedList = "";
+            for (var i = 0; i < trans_record.length; i++) {
+                unorderedList += "<ul><input type=\"radio\" name=\"trans_record\" id=c" + (i + 2) + ">" + trans_record[i] + "</ul>";
+            }
+            dirList.innerHTML = unorderedList;
+        </script>
+    </div>
+    <div class="side-panel">
+        <!--script>
+                function display() {
+                    var printMsg = document.getElementById(trans_record[i].name, trans_record[i].organization);
+                    printMsg.innerHTML = trans_record[i];
+                    printMsg.innerHTML += ""
+                };
+            </script-->
+        <h6>The Amount You Would Like to Forward:</h6>
+        <input type="number" id="forward_amt" value="0" min="0.00">
+    </div>
+    <br>
+    <input type="reset" value="Clear">
+    <input type="submit" value="Submit" onclick=display()>
+
+    <footer class="footer-copyright text-center py-3">
+        &copy; 2018 The Dream Team
+    </footer>
+</body>
+</html>
